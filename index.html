@@ -8,8 +8,11 @@
 <body>
     
 
+<h2>Bar Chart</h2>
+<div id="barChart"></div>
 
-
+<h2>Pie Chart</h2>
+<div id="pieChart"></div>
 
 
 
@@ -17,11 +20,9 @@
 
 
 <script type="text/javascript">
-let barChart = new MakeChart(3,5,'blue');
-let pieChart = new MakeChart(2,10,'red');
+let barChart = new MakeChart(3,5,'blue', 'barChart');
+let pieChart = new MakeChart(2,10,'red', 'pieChart');
 
-console.log(barChart.getArea());
-console.log(pieChart.getArea());
 </script>
 
 </body>

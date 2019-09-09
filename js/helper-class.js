@@ -21,7 +21,7 @@ class MakeChart {
     // Class constructor, runs once when the opject is created. used to setup an object
 
     // add arguments to constructor for the properties you need
-    constructor (_width, _height, _color) {
+    constructor (_width, _height, _color, _holder) {
         console.log('the object is being created');
         // this refers to the current object
 
@@ -29,12 +29,19 @@ class MakeChart {
         this.width = _width;
         this.height = _height;
         this.color = _color;
+        this.holder = _holder;
 
+        document.getElementById(this.holder).innerHTML = "width "+this.width; 
     }
 
     // instance methods  actions that can use the data set in the properties
     getArea () {
         return this.width = this.height;
+    }
+
+    loadChart () {
+        console.log(this.holder)
+        document.getElementById(this.holder).innerHTML = "width "; 
     }
 
 
